@@ -2,58 +2,55 @@ body {
   min-width: 100px;
   max-width: 700px;
   margin: auto;
-  background : #f7f5f2;
+  background : 'White';
   font-size: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-#navbar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 28px;
-  margin-bottom: 24px;
-  vertical-align: bottom;
-}
-
-#navbar a{
-  color: black;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  color: grey;
-}
-
-
-#navbar li {
-  display: inline-block;
-  width: 60px;
-}
-
-#on {
-  font-weight: bold;
-}
-
-#on a:hover{
-  color: grey;
-}
-
 h1 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-size: 36px;
+  font-family: 'IBM Plex Sans'
+}
+
+h2 {
   margin-top: 28px;
   margin-bottom: 24px;
-  font-size: 28px;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans';
 }
+
 
 p {
   margin-top: 0px;
+  font-family: 'Charter';
+  font-size: 20px;
 }
 
 ul {
+  margin-top: 0px;
+  font-family: 'Charter';
+  font-size: 20px;
   list-style-type: '-';
 }
 
-a {
+@font-face {
+  font-family: 'IBM Plex Sans'; /*a name to be used later*/
+  src: url('fonts/IBMPlexSans-SemiBold.ttf'); /*URL to font*/
+}
 
+@font-face {
+  font-family: 'Charter'; /*a name to be used later*/
+  src: url('fonts/Charter.ttc'); /*URL to font*/
+}
+
+a {
+  color: #eb3e13;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
