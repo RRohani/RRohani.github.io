@@ -169,6 +169,7 @@ function route() {
   const g = location.hash === "#graph";
   $("#tab-today").classList.toggle("active", !g);
   $("#tab-graph").classList.toggle("active", g);
+  document.body.classList.toggle("graph", g);
   window.scrollTo(0, 0);
   render();
 }
